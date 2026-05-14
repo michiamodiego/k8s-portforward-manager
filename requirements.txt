@@ -1,0 +1,2 @@
+# Port-Forward Manager Dependencies
+psutil>=5.9.0

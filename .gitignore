@@ -1,0 +1,22 @@
+# Configuration locale
+SPEC.md
+_test_pf_manager.py
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+*.egg
+
+# Tool folders
+.claude/
+
+# Virtual environment
+venv/

@@ -1,0 +1,19 @@
+{
+  "portforwards": [
+    {
+      "name": "your-service-name",
+      "resource_type": "svc",
+      "resource_name": "your-resource-name",
+      "namespace": "",
+      "local_port": "local-port",
+      "remote_port": "remote-port"
+    }
+  ],
+  "environments": [
+    {
+      "label": "dev",
+      "command": "az account set --subscription your-subscription && az aks get-credentials --resource-group your-resource-group --name your-aks-name --subscription your-subscription --file path-to-your-kubeconfig --overwrite-existing && kubectl config set-context --current --namespace=your-namespace"
+    }
+  ],
+  "selected_environment": "dev"
+}
